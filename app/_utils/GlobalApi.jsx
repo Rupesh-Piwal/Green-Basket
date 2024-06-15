@@ -4,6 +4,13 @@ const axiosClient = axios.create({
   baseURL: "http://localhost:1337/api",
 });
 
-const getCategory = () => axiosClient.get("/categories");
+const getCategory = async () => {
+  try {
+    const response = await axiosClient.get("/categories?populate=*");
+    return response;
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+  }
+};
 
-export default getCategory;
+export default { getCategory };
