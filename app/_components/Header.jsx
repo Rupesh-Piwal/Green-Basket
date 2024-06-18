@@ -60,7 +60,7 @@ const Header = () => {
             <DropdownMenuLabel>Browse Category</DropdownMenuLabel>
             <DropdownMenuSeparator />
             {categoryList.map((category, index) => (
-              <DropdownMenuItem className="cursor-pointer flex gap-2 items-center">
+              <DropdownMenuItem className="cursor-pointer flex gap-2 items-center bg-white">
                 <Image
                   src={
                     process.env.NEXT_PUBLIC_BACKEND_BASE_URL +

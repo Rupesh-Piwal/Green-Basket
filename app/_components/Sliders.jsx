@@ -24,7 +24,7 @@ const Sliders = ({ sliderList }) => {
                 alt="slider"
                 width={800}
                 height={300}
-                className="w-full"
+                className="w-full sm:h-[200px] md:h-[400px] object-cover rounded-2xl"
               />
             </CarouselItem>
           ))}
